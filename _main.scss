@@ -8,24 +8,37 @@ body {
         @include screen5 {
             padding: 3rem;
         }
-        .logo-name {
-            width: 10vw;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-content: start;
-            align-items: start;
-            margin-left: -0.5rem;
-            animation: fade-up .7s .4s backwards;
-            img {
-                width: 50px;
+        .logo-wrap {
+            @include sc {
+                height: 50px;
+                margin-bottom: 40px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+                border-radius: 45px;
+                width: 90vw;
+                position: relative;
+                left: -10%;
+                padding-inline: 20px;
             }
-            h3 {
-                color: getColor(color04);
-                font-size: 20px;
-                margin-bottom: 2rem;
-                line-height: 50px;
-            }
+           .logo-name {
+                width: 10vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: start;
+                align-items: start;
+                margin-left: -0.5rem;
+                animation: fade-up .7s .4s backwards;
+                img {
+                    width: 50px;
+                }
+                h3 {
+                    color: getColor(color04);
+                    font-size: 20px;
+                    margin-bottom: 2rem;
+                    line-height: 50px;
+                }
+            } 
         }
+        
         .main-content {
             position: relative;
             display: flex;

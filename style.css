@@ -32,7 +32,17 @@ body #main {
     padding: 3rem;
   }
 }
-body #main .logo-name {
+body #main .logo-wrap {
+  height: 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 45px;
+  width: 90vw;
+  position: relative;
+  left: -10%;
+  padding-inline: 20px;
+}
+body #main .logo-wrap .logo-name {
   width: 10vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,10 +51,10 @@ body #main .logo-name {
   margin-left: -0.5rem;
   animation: fade-up 0.7s 0.4s backwards;
 }
-body #main .logo-name img {
+body #main .logo-wrap .logo-name img {
   width: 50px;
 }
-body #main .logo-name h3 {
+body #main .logo-wrap .logo-name h3 {
   color: #90E0EF;
   font-size: 20px;
   margin-bottom: 2rem;
